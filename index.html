@@ -18,7 +18,7 @@
   <body onscroll="onScroll()"  class="">
     <nav id="navigation" class="scroll">
       <div class="wrapper">
-        <a class="logo" href="#">
+        <a class="logo" href="#home">
           <svg
             width="133"
             height="18"
@@ -71,8 +71,8 @@
 
         <div class="menu">
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Serviços</a></li>
+            <li><a onclick="closeMenu()" href="#home">Início</a></li>
+            <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
             <li><a href="#">Sobre</a></li>
           </ul>
 
@@ -157,11 +157,11 @@
             
         </button>
 
-       >
+       
       </div>
     </nav>
 
-    <header>
+    <header id="home" class="wrapper">
       <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
       <h1>Assistência médica simplificada para todos</h1>
       <p>
@@ -207,6 +207,51 @@
         </div>
       </div>
     </header>
+
+    <section id="services">
+      <div class="wrapper">
+        <header>
+          <h4>Serviços</h4>
+          <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.091 4.18182L6.091 11.1818L2.90918 8.00001" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+              <h3>Problemas digestivos</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+  
+          <div class="card">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.091 4.18182L6.091 11.1818L2.90918 8.00001" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+              <h3>Saúde Hormonal</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+  
+          <div class="card">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.091 4.18182L6.091 11.1818L2.90918 8.00001" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+              <h3>Bem-estar mental</h3>
+              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+  
+
+        </div>
+
+      
+       </div>
+    </section>
+
+<!--ScrollReavel LIB-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="main.js"></script>
   </body>

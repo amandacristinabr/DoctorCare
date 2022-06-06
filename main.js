@@ -17,3 +17,13 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('menu-expanded')
 }
+
+function ScrollReveal() {
+  var options = {
+    reveal: function () {}
+  }
+
+  return options
+}
+
+ScrollReveal().reveal('#home')
