@@ -2,11 +2,27 @@
 // Number (número)
 //Boolean (true | false)
 
+window.addEventListener('scroll', onScroll)
+
+onScroll()
 function onScroll() {
+  showNavOnScroll()
+  showBackToTopButtonOnScroll()
+}
+
+function showNavOnScroll() {
   if (scrolly > 0) {
     navigation.classList.add('scroll')
   } else {
     navigation.classList.remove('scroll')
+  }
+}
+
+function showBackToTopButtonOnScroll() {
+  if (scrolly > 400) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
   }
 }
 
